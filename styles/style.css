@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+*,
+body {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+  padding: 0;
+  background: #e0e0e0;
+}
+ul,
+li,
+ol {
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.box {
+  border-radius: 27px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #a6a6a6, -5px -5px 10px #ffffff;
+  width: 400px;
+  height: 600px;
+  padding: 25px;
+}
+.calc-name {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0;
+}
+.display {
+  padding: 0;
+}
+.display input {
+  font-size: 30px;
+  pointer-events: none;
+  margin: 20px 0;
+  width: 100%;
+  height: 80px;
+  border: 0;
+  border-radius: 10px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #a6a6a6, inset -5px -5px 10px #ffffff;
+}
+.buttons {
+  width: 100%;
+  height: 380px;
+  background: #e0e0e0;
+  padding: 0;
+}
+.btnn {
+  width: 20%;
+  height: 60px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #eeeeee, #c8c8c8);
+  box-shadow: 5px 5px 10px #a4a4a4, -5px -5px 10px #ffffff;
+  font-size: 22px;
+}
+.btnn2 {
+  width: 100%;
+  background: linear-gradient(145deg, #ba83e7, #6b00c3);
+  box-shadow: 5px 5px 10px #785595, -5px -5px 10px #ecd4ff;
+  color: white;
+}
+.red{
+  background: linear-gradient(145deg, #e9825a, #c33700);
+  box-shadow: 5px 5px 10px #5c3525, -5px -5px 10px #ffe5da;
+  color: white;
+}
+.equal {
+  width: 45%;
+}
+.radif1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin: 12px 0;
+}
+.radif1 .btnn:active {
+  background: linear-gradient(145deg, #c8c8c8, #eeeeee);
+  box-shadow: 5px 5px 10px #afafaf, -5px -5px 10px #ffffff;
+}
+.radif1 .btnn2:active {
+  background: linear-gradient(145deg, #872bd1, #ba83e7);
+  box-shadow: 5px 5px 10px #785595, -5px -5px 10px #ecd4ff;
+}
+.radif1 .red:active {
+  background: linear-gradient(145deg, #c33700, #e9825a);
+  box-shadow: 5px 5px 10px #5c3525, -5px -5px 10px #ffe5da;
+}
