@@ -53,8 +53,11 @@ p {
 }
 .display {
   padding: 0;
+  direction: ltr;
+  text-align: left;
 }
 .display input {
+  padding: 0 10px;
   font-size: 30px;
   pointer-events: none;
   margin: 20px 0;
@@ -83,12 +86,12 @@ p {
 .btnn2 {
   width: 100%;
   background: linear-gradient(145deg, #ba83e7, #6b00c3);
-  box-shadow: 5px 5px 10px #785595, -5px -5px 10px #ecd4ff;
+  box-shadow: 5px 5px 10px #785595, -5px -5px 10px #ffffff;
   color: white;
 }
 .red{
   background: linear-gradient(145deg, #e9825a, #c33700);
-  box-shadow: 5px 5px 10px #5c3525, -5px -5px 10px #ffe5da;
+  box-shadow: 5px 5px 10px #5c3525, -5px -5px 10px #ffffff;
   color: white;
 }
 .equal {

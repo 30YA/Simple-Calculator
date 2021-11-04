@@ -20,43 +20,43 @@
         </div>
         <div class="row">
           <div class="display">
-            <input type="text">
+            <input id="display" type="text" placeholder="0">
           </div>
         </div>
         <div class="row">
-          <div class="buttons">
+          <form class="buttons">
             <div class="radif1">
-              <input type="button" class="btnn" value="7">
-              <input type="button" class="btnn" value="8">
-              <input type="button" class="btnn" value="9">
-              <input type="button" class="btnn red" value="DEL">
+              <input type="button" name="b7" class="btnn" value="7" onclick="addtodis(b7.value)">
+              <input type="button" name="b8" class="btnn" value="8" onclick="addtodis(b8.value)">
+              <input type="button" name="b9" class="btnn" value="9" onclick="addtodis(b9.value)">
+              <input type="button" name="del" class="btnn red" value="CE" onclick="delett()">
             </div>
             <div class="radif1">
-              <input type="button" class="btnn" value="4">
-              <input type="button" class="btnn" value="5">
-              <input type="button" class="btnn" value="6">
-              <input type="button" class="btnn" value="+">
+              <input type="button" name="b4" class="btnn" value="4" onclick="addtodis(b4.value)">
+              <input type="button" name="b5" class="btnn" value="5" onclick="addtodis(b5.value)">
+              <input type="button" name="b6" class="btnn" value="6" onclick="addtodis(b6.value)">
+              <input type="button" name="plus" class="btnn" value="+" onclick="addtodis(plus.value)">
             </div>
             <div class="radif1">
-              <input type="button" class="btnn" value="1">
-              <input type="button" class="btnn" value="2">
-              <input type="button" class="btnn" value="3">
-              <input type="button" class="btnn" value="-">
+              <input type="button" name="b1" class="btnn" value="1" onclick="addtodis(b1.value)">
+              <input type="button" name="b2" class="btnn" value="2" onclick="addtodis(b2.value)">
+              <input type="button" name="b3" class="btnn" value="3" onclick="addtodis(b3.value)">
+              <input type="button" name="minn" class="btnn" value="-" onclick="addtodis(minn.value)">
             </div>
             <div class="radif1">
-              <input type="button" class="btnn" value=".">
-              <input type="button" class="btnn" value="0">
-              <input type="button" class="btnn" value="&divide;">
-              <input type="button" class="btnn" value="&times;">
+              <input type="button" name="dut" class="btnn" value="." onclick="addtodis(dut.value)">
+              <input type="button" name="b0" class="btnn" value="0" onclick="addtodis(b0.value)">
+              <input type="button" name="taghsim" class="btnn" value="&divide;" onclick="addtodis(taghsim.value)">
+              <input type="button" name="zarb" class="btnn" value="&times;" onclick="addtodis(zarb.value)">
             </div>
             <div class="radif1">
-              <input type="button" class="btnn" value="^">
-              <input type="button" class="btnn" value="&radic;">
+              <input type="button" name="tavan" class="btnn" value="^" onclick="addtodis(tavan.value)">
+              <input type="button" name="radikal" class="btnn" value="&radic;" onclick="mathCal()">
               <div class="equal">
-                <input type="button" class="btnn btnn2" value="=">
+                <input type="button" name="equal" class="btnn btnn2" value="="onclick="final()">
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
