@@ -8,7 +8,22 @@ function addtodis(value) {
             document.getElementById("display").value = "";
         }
         else{
-            document.getElementById("display").value += value;
+            let last_index;
+            if(value == "+" || value == "-" || value == "^" || value == "×" || value == "÷"){
+                let numbers = Object.assign([], document.getElementById("display").value);
+                for(let i = 0; i < numbers.length ; i++){
+                    last_index = numbers[i];
+                }
+                if (last_index == "+" || last_index == "-" || last_index == "^" || last_index == "×" || last_index == "÷"){
+                    document.getElementById("display").value += "";
+                }
+                else{
+                    document.getElementById("display").value += value;
+                }
+            }
+            else{
+                document.getElementById("display").value += value;
+            }
         }
     }
 };
@@ -32,6 +47,3 @@ function mathCal(value) {
         document.getElementById("display").value = Math[value](val);
     }
 }
-// function tavann(value) {
-//     document.getElementById("display").value += value;
-// }
