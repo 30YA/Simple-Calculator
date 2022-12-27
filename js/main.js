@@ -24,6 +24,9 @@ function addtodis(value) {
             else{
                 document.getElementById("display").value += value;
             }
+            if (document.getElementById("display").value[0] === "0" && document.getElementById("display").value[1] !== undefined && !isNaN(+document.getElementById("display").value[1])) {
+                document.getElementById("display").value = document.getElementById("display").value[1];
+            }
         }
     }
 };
